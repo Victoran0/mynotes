@@ -1,9 +1,10 @@
 # Using A Django Restful API for the backend, we have create a Notes APP that uses React JS on the frontend
 
-#### Required dependencies for the Python-Django part
+## Required dependencies for the Python-Django part
 
 ### `django-cors-headers`
 ### `djangorestframework`
+
 
 ## Required dependencies for the React JS Aspect
 
