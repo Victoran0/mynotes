@@ -13,7 +13,7 @@ const NoteLIstPage = (props) => {
     }, [])
 
     let getNotes = async () =>{
-        let response = await fetch('http://127.0.0.1:8000/api/notes/')
+        let response = await fetch('http://notesappp.pythonanywhere.com/api/notes/')
         let data = await response.json()
         setNotes(data)
 

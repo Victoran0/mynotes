@@ -16,13 +16,13 @@ const NotePage = (props) => {
 
     let getNotes = async ()=>{
         if (id === 'new') return
-        let response = await fetch(`http://127.0.0.1:8000/api/notes/${id}/`)
+        let response = await fetch(`http://notesappp.pythonanywhere.com/api/notes/${id}/`)
         let data = await response.json()
             setNote(data)
     }
 
     let createNote = async () => {
-        fetch(`http://127.0.0.1:8000/api/notes/`, {
+        fetch(`http://notesappp.pythonanywhere.com/api/notes/`, {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json'
@@ -32,7 +32,7 @@ const NotePage = (props) => {
     }
 
     let updateNote = async () => {
-        fetch(`http://127.0.0.1:8000/api/notes/${id}/`, {
+        fetch(`http://notesappp.pythonanywhere.com/api/notes/${id}/`, {
             method: "PUT",
             headers: {
                 'Content-Type': 'application/json'
@@ -42,7 +42,7 @@ const NotePage = (props) => {
     }
 
     let deleteNote = async () => {
-        fetch(`http://127.0.0.1:8000/api/notes/${id}/`, {
+        fetch(`http://notesappp.pythonanywhere.com/api/notes/${id}/`, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json'
